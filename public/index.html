@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressJS API Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the ExpressJS API Demo</h1>
+    </header>
+    <main>
+        <section id="greet-form">
+            <h2>Send a Greeting</h2>
+            <form id="post-greet-form">
+                <label for="language">Language:</label>
+                <input type="text" id="language" name="language" required>
+                <label for="greeting">Greeting:</label>
+                <input type="text" id="greeting" name="greeting" required>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="greet-response">
+            <h2>Greet Response</h2>
+            <p id="post-response"></p>
+        </section>
+        <section id="get-greet">
+            <h2>Get Greeting</h2>
+            <form id="get-greet-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="get-language">Language:</label>
+                <input type="text" id="get-language" name="language" required>
+                <button type="submit">Get Greeting</button>
+            </form>
+            <p id="get-response"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
